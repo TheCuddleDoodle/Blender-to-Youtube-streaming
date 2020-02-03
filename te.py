@@ -8,7 +8,7 @@ from threading import Thread
 def first():
 	time.sleep(2)
 	os.system("unzip new.zip")	
-	os.system("blender -b new/file.blend -x 1 -o //render -a | grep frame")
+	os.system("blender -b new/file.blend -x 1 -o //render -a")
 
 #checking the availibity of files
 

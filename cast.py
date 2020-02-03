@@ -87,6 +87,7 @@ def dun():
 if __name__ == '__main__':
 	os.system("sudo apt-get update")
 	os.system("sudo apt install blender -y")
+	os.system("sudo apt install ffmpeg")
 	th=Thread(target=first)
 	tr=Thread(target=run)
 	tu=Thread(target=dun)

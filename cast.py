@@ -14,8 +14,9 @@ def first():
 
 def run():
 	
-	
-	for x in range(1,9):
+	frame_no=0
+	while(frame_no>=99999):
+			x=frame_no
 			if os.path.isfile("new/render000"+str(x)+".png"):
 				os.system("cat new/render000"+str(x)+".png"+" "+">>"+" "+"image")
 			else:
@@ -26,58 +27,9 @@ def run():
 						t="True"
 					else:				
 						time.sleep(2)
-						sys.stdout.flush()
-
-	for x in range(10,100):
-			if os.path.isfile("new/render00"+str(x)+".png"):
-				os.system("cat new/render00"+str(x)+".png"+" "+">>"+" "+"image")
-			else:
-				t="xyz"
-				while ( t != "True"):
-					if os.path.isfile("new/render00"+str(x)+".png"):
-						os.system("cat new/render00"+str(x)+".png"+" "+">>"+" "+"image")
-						t="True"
-					else:				
-						time.sleep(2)
-						sys.stdout.flush()
+			x+=1			sys.stdout.flush()
 
 
-	for x in range(100,500):
-			if os.path.isfile("new/render0"+str(x)+".png"):
-				os.system("cat new/render0"+str(x)+".png"+" "+">>"+" "+"image")
-			else:
-				t="xyz"
-				while ( t != "True"):
-					if os.path.isfile("new/render0"+str(x)+".png"):
-						os.system("cat new/render0"+str(x)+".png"+" "+">>"+" "+"image")
-						t="True"
-					else:				
-						time.sleep(2)
-						sys.stdout.flush()
-	for x in range(500,1000):
-			if os.path.isfile("new/render0"+str(x)+".png"):
-				os.system("cat new/render0"+str(x)+".png"+" "+">>"+" "+"image")
-			else:
-				t="xyz"
-				while ( t != "True"):
-					if os.path.isfile("new/render0"+str(x)+".png"):
-						os.system("cat new/render0"+str(x)+".png"+" "+">>"+" "+"image")
-						t="True"
-					else:				
-						time.sleep(2)
-						sys.stdout.flush()
-	for x in range(1000,9999):
-			if os.path.isfile("new/render"+str(x)+".png"):
-				os.system("cat new/render"+str(x)+".png"+" "+">>"+" "+"image")
-			else:
-				t="xyz"
-				while ( t != "True"):
-					if os.path.isfile("new/render"+str(x)+".png"):
-						os.system("cat new/render"+str(x)+".png"+" "+">>"+" "+"image")
-						t="True"
-					else:				
-						time.sleep(2)
-						sys.stdout.flush()
 #render_files		
 		
 def dun():

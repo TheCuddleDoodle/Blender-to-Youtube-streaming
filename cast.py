@@ -27,7 +27,8 @@ def run():
 						t="True"
 					else:				
 						time.sleep(2)
-			x+=1			sys.stdout.flush()
+						sys.stdout.flush()
+						x+=1	
 
 
 #render_files		
